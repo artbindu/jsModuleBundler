@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# Files
+public/*.js
+public/*[.avif, .png. .jpg, .jpeg]
+
+!public/index.html
