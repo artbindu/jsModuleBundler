@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: "production", // build type
+    mode: "development", // build type
     entry: "./src/app.js", // entry point
     output: { // output config
         path: path.resolve(__dirname, 'public'), // output directory
@@ -12,6 +12,7 @@ module.exports = {
         compress: true,
         port: 8008
     },
+    // loader
     module: {
         rules: [{
             test: /\.css$/,
