@@ -14,3 +14,31 @@
  ```
         npm run build:dev
  ```
+
+ 
+- [x] Project Structure:
+
+```
+webpackApp
+      │
+      ├───public (output directory)
+      │     └───index.html
+      │
+      ├───node_modules
+      │
+      ├───src
+      │     ├───images
+      │     │     ├───bg.avif
+      │     │     └───logo.png
+      │     │
+      │     ├───styles
+      │     │     └───style.css
+      │     │
+      │     ├───app.js (entry file)
+      |     └───module.js
+      |
+      ├───package-lock.json
+      ├───package.json
+      ├───webpack.config.dev.js  (webpack dev envs cofig)
+      └───webpack.config.prod.js (webpack prod envs config)
+```
