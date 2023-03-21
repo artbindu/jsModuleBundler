@@ -2,6 +2,9 @@
   "name": "webpackapp",
   "version": "1.0.0",
   "description": "Set up Webpack for Basic Javascript Projects",
+  "engines": {
+    "node": ">= 16.15.1 <=18.15.0"
+  },
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack --config webpack.config.prod.js",
