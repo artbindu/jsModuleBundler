@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+package-lock.json
+
+# Files
+public/*.js
+public/*[.avif, .png. .jpg, .jpeg]
+
+!public/index.html 
