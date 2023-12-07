@@ -18,6 +18,8 @@ module.exports = {
     // HtmlWebpackPlugin
     plugins: [new HtmlWebpackPlugin({
         template: "./public/index.html",
-        filename: "./index.html"
+        filename: "./index.html",
+
+        title: 'ProdApp'
     })],
 }

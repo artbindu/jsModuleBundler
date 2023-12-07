@@ -2,7 +2,8 @@
 node_modules/
 package-lock.json
 
-
+# build file
+build/
 
 # Other jsModule Bundlier
 rollupjs/

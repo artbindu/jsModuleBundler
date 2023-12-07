@@ -25,7 +25,6 @@ module.exports = {
         template: "./public/index.html",
         filename: "./index.html",
 
-        title: 'Webpack_Dev',
-        bodyTags: "Development Build"
-    })],
+        title: 'DevApp'
+    })]
 }
