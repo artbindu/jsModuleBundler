@@ -39,6 +39,6 @@ webpackApp
       |
       ├───package-lock.json
       ├───package.json
-      ├───webpack.config.dev.js  (webpack dev envs cofig)
+      ├───webpack.config.dev.js  (webpack dev envs config)
       └───webpack.config.prod.js (webpack prod envs config)
 ```

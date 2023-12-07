@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: "development", // build type
+    mode: "production", // build type
     entry: "./src/app.js", // entry point
     output: { // output config
         path: path.resolve(__dirname, 'public'), // output directory
