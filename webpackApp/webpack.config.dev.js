@@ -22,7 +22,10 @@ module.exports = {
     },
     // HtmlWebpackPlugin
     plugins: [new HtmlWebpackPlugin({
-        template: "./index.html",
-        filename: "./index.html"
+        template: "./public/index.html",
+        filename: "./index.html",
+
+        title: 'Webpack_Dev',
+        bodyTags: "Development Build"
     })],
 }

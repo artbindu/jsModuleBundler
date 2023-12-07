@@ -2,10 +2,7 @@
 node_modules/
 package-lock.json
 
-# public Files
-!public/*/*.html
-public/*/*[.avif, .png. .jpg, .jpeg]
-public/*/dist
+
 
 # Other jsModule Bundlier
 rollupjs/

@@ -9,7 +9,7 @@
   "scripts": {
     "clean:prod": "rimraf build/prod",
     "clean:dev": "rimraf build/dev",
-    "clean": "npm run clean:build",
+    "clean": "rimraf build",
     "build": "webpack --config webpack.config.prod.js",
     "server": "webpack-dev-server --open --config webpack.config.dev.js",
     "build:prod": "npm run clean:prod && npm run build",
