@@ -1,14 +1,15 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
     mode: "development", // build type
     entry: "./src/app.js", // entry point
     output: { // output config
-        path: path.resolve(__dirname, 'public/dev'), // output directory
+        path: path.resolve(__dirname, 'build/dev'), // output directory
         filename: 'script.js' // output file
     },
     devServer: {  // config devServer with current output file 'public'
-        static: path.join(__dirname, 'public/dev'),
+        static: path.join(__dirname, 'build/dev'),
         compress: true,
         port: 8008
     },
@@ -18,5 +19,10 @@ module.exports = {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         }]
-    }
+    },
+    // HtmlWebpackPlugin
+    plugins: [new HtmlWebpackPlugin({
+        template: "./index.html",
+        filename: "./index.html"
+    })],
 }

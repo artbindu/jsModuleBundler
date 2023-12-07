@@ -7,8 +7,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "clean:prod": "rimraf prod/dist",
-    "clean:dev": "rimraf dev/dist",
+    "clean:prod": "rimraf build/prod",
+    "clean:dev": "rimraf build/dev",
+    "clean": "npm run clean:build",
     "build": "webpack --config webpack.config.prod.js",
     "server": "webpack-dev-server --open --config webpack.config.dev.js",
     "build:prod": "npm run clean:prod && npm run build",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.4",
     "style-loader": "^3.3.1",
     "webpack-dev-server": "^4.11.1"
   }
