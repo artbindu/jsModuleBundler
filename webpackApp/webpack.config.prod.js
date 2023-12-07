@@ -10,12 +10,10 @@ module.exports = {
     },
     // loader
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
-            }
-        ]
+        }]
     },
     // HtmlWebpackPlugin
     plugins: [new HtmlWebpackPlugin({
