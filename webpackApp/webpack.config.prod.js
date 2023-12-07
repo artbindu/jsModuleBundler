@@ -11,8 +11,8 @@ module.exports = {
     // loader
     module: {
         rules: [{
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
         }]
     },
     // HtmlWebpackPlugin
