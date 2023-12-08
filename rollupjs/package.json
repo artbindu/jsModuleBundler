@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "clean": "rimraf build",
-    "build": "npm run clean && rollup --config"
+    "build": "npm run clean && rollup --config --watch"
   },
   "keywords": [
     "rollup",
