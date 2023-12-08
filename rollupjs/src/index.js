@@ -1,7 +1,7 @@
-import { module } from "./module";
-// import './styles/styles.css';
+import { module } from "./module/module";
+import './index.css'; 
 
-function mainBody() {
+function mainBody() { 
     var el = document.createElement("h1");
     el.textContent = "This is First Rollup Project";
     return el;

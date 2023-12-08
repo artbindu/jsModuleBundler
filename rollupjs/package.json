@@ -20,9 +20,9 @@
   "license": "ISC",
   "devDependencies": {
     "rimraf": "^5.0.5",
-    "win-node-env": "^0.6.1",
     "rollup": "^4.6.1",
     "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-css-only": "^4.5.2",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^3.0.0"
   }
