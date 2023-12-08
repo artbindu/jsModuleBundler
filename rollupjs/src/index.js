@@ -1,4 +1,5 @@
 import { module } from "./module";
+// import './styles/styles.css';
 
 function mainBody() {
     var el = document.createElement("h1");
@@ -12,5 +13,5 @@ function main() {
 }
 
 (function () {
-    main();
+    main(); 
 })();
