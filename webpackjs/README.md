@@ -19,7 +19,7 @@
 - [x] Project Structure:
 
 ```
-webpackApp
+webpackjs
       │
       ├───public (output directory)
       │     └───index.html
