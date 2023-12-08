@@ -7,17 +7,22 @@
   },
   "type": "module",
   "scripts": {
-    "clean": "rimraf build",
-    "build:dev": "rollup --config",
-    "build:prod": "npm run clean && NODE_ENV=production rollup --config"
+    "build": "rollup --config --watch"
   },
-  "keywords": ["rollup", "rollup-plugin"],
+  "keywords": [
+    "rollup",
+    "rollup-plugin-livereload",
+    "rollup-plugin-serve",
+    "rollup-plugin-copy"
+  ],
   "author": "Biswasindhu Mandal",
   "license": "ISC",
   "devDependencies": {
     "rimraf": "^5.0.5",
+    "win-node-env": "^0.6.1",
     "rollup": "^4.6.1",
-    "rollup-plugin-serve": "^3.0.0",
-    "win-node-env": "^0.6.1"
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^3.0.0"
   }
 }
