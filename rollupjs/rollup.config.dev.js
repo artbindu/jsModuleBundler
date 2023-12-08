@@ -1,4 +1,8 @@
 // rollup.config.dev.js
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+import babel from '@rollup/plugin-babel';
+
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
 import copy from 'rollup-plugin-copy';
@@ -11,6 +15,12 @@ export default [{
     format: 'cjs'
   },
   plugins: [
+    resolve(),
+    commonjs(),
+    babel({
+      babelHelpers: 'bundled',
+      exclude: 'node_modules/**',
+    }),
     css({
       // all `*.css` files in src directory
       input: ['src/*.css', 'src/*/*.css'],
