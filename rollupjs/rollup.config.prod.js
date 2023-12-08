@@ -31,7 +31,7 @@ export default [{
         dest: 'build/prod/images'
       }],
     }),
-    terser({
+    terser({ // JavaScript minifier
       // maximum number of worker processes for parallelizing the minification process
       maxWorkers: 4,
       compress: {
