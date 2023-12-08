@@ -5,10 +5,19 @@
   "engines": {
     "node": ">= 16.15.1 <=18.15.0"
   },
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": ""
+    "clean": "rimraf build",
+    "build:dev": "rollup --config",
+    "build:prod": "npm run clean && NODE_ENV=production rollup --config"
   },
+  "keywords": ["rollup", "rollup-plugin"],
   "author": "Biswasindhu Mandal",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "rollup": "^4.6.1",
+    "rollup-plugin-serve": "^3.0.0",
+    "win-node-env": "^0.6.1"
+  }
 }

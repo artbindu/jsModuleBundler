@@ -3,7 +3,6 @@ node_modules/
 package-lock.json
 
 # Files
-public/*.js
-public/*[.avif, .png. .jpg, .jpeg]
+build/
 
 !public/index.html 
