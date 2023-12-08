@@ -7,8 +7,13 @@
   },
   "type": "module",
   "scripts": {
+    "clean:prod": "rimraf build/prod",
+    "clean:dev": "rimraf build/dev",
     "clean": "rimraf build",
-    "build": "npm run clean && rollup --config --watch"
+    "build": "rollup -c rollup.config.prod.js",
+    "server": "rollup -c rollup.config.dev.js -w",
+    "build:prod": "npm run clean:prod && npm run build",
+    "build:dev": "npm run clean:dev && npm run server"
   },
   "keywords": [
     "rollup",
@@ -19,8 +24,13 @@
   "author": "Biswasindhu Mandal",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "rimraf": "^5.0.5",
     "rollup": "^4.6.1",
+    "rollup-obfuscator": "^4.1.1",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-css-only": "^4.5.2",
     "rollup-plugin-livereload": "^2.0.5",

@@ -13,6 +13,7 @@ function addImage() {
 }
 
 export function module() {
+    console.log('This is Child 001');
     var el = document.createElement("h2");
     el.className = "cl2";
     el.id = "id2";
