@@ -4,5 +4,4 @@ package-lock.json
 
 # Files
 build/
-
-!public/index.html 
+dist/
