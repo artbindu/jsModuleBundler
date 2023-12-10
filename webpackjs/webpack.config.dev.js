@@ -4,14 +4,11 @@ const path = require('path');
 module.exports = {
     mode: "development", // build type
     entry: "./src/app.js", // entry point
-    output: { // output config
-        path: path.resolve(__dirname, 'build/dev'), // output directory
-        filename: 'script.js' // output file
-    },
+    // webpack devServer
     devServer: {  // config devServer with current output file 'public'
         static: path.join(__dirname, 'build/dev'),
         compress: true,
-        port: 8008
+        port: 8002
     },
     // loader
     module: {
@@ -20,11 +17,18 @@ module.exports = {
             use: ['style-loader', 'css-loader']
         }]
     },
-    // HtmlWebpackPlugin
-    plugins: [new HtmlWebpackPlugin({
-        template: "./public/index.html",
-        filename: "./index.html",
-
-        title: 'DevApp'
-    })]
+    // webpack plugins
+    plugins: [
+        // HtmlWebpackPlugin
+        new HtmlWebpackPlugin({
+            template: "./public/index.html",
+            filename: "./index.html",
+            title: 'webpack-dev' // HTML page - title
+        })
+    ],
+    output: { // output config
+        path: path.resolve(__dirname, 'build/dev'), // output directory
+        filename: 'script.js', // output file
+        clean: true,
+    },
 }

@@ -13,7 +13,7 @@ function main() {
     var d = document.getElementById("main");
     d.appendChild(mainBody());
     d.appendChild(module());
-}
+} 
 
 (function () {
     main();

@@ -1,5 +1,6 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackObfuscator = require('webpack-obfuscator');
 
 module.exports = {
     mode: "production", // build type
@@ -15,11 +16,25 @@ module.exports = {
             use: ['style-loader', 'css-loader']
         }]
     },
-    // HtmlWebpackPlugin
-    plugins: [new HtmlWebpackPlugin({
-        template: "./public/index.html",
-        filename: "./index.html",
-
-        title: 'ProdApp'
-    })],
+    // webpack plugins
+    plugins: [
+        new HtmlWebpackPlugin({// HtmlWebpackPlugin
+            template: "./public/index.html",
+            filename: "./index.html",
+            title: 'webpack-prod' // HTML page - title
+        }),
+        new WebpackObfuscator ({ // JavaScript Obfuscator
+            // what files will obfuscate or what not
+            include: ['src/**/*.js', 'public/*.html'],
+            exclude: ['node_modules/**', 'build/**'],
+            enforce: 'post',
+            // Obfuscator Rules
+            use: { 
+                loader: WebpackObfuscator.loader, 
+                options: {
+                    rotateStringArray: true
+                }
+            }
+        })
+    ],
 }
