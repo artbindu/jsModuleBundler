@@ -5,4 +5,5 @@ package-lock.json
 # Files
 build/
 
-!public/index.html 
+# Other jsModule Bundlier
+webpackjs/

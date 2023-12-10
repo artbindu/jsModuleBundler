@@ -1,6 +1,6 @@
 # [Webpack Learning](https://webpack.js.org/concepts/)
 
- - [x] Documentation: [Javascript module bundler: Webpack (Essential to learn)](https://medium.com/@artbindu/javascript-module-bundler-webpack-essential-to-learn-2e2a661e27c)
+ - [x] Documentation: [Javascript module bundler: Webpack (Essential to learn)](https://medium.com/p/2e2a661e27c)
  - [x] How to run:
  -  Install Node Module and it's dependencies
   ```
@@ -39,6 +39,6 @@ webpackjs
       |
       ├───package-lock.json
       ├───package.json
-      ├───webpack.config.dev.js  (webpack dev envs cofig)
+      ├───webpack.config.dev.js  (webpack dev envs config)
       └───webpack.config.prod.js (webpack prod envs config)
 ```

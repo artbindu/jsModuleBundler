@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackObfuscator = require('webpack-obfuscator');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: "production", // build type
@@ -23,14 +24,22 @@ module.exports = {
             filename: "./index.html",
             title: 'webpack-prod' // HTML page - title
         }),
-        new WebpackObfuscator ({ // JavaScript Obfuscator
+        new CopyPlugin({ // CopyPlugin
+            patterns: [{
+                from: "./public/*.ico",
+                to({ context, absoluteFilename }) {
+                    return Promise.resolve("[name][ext]");
+                }
+            }],
+        }),
+        new WebpackObfuscator({ // JavaScript Obfuscator
             // what files will obfuscate or what not
             include: ['src/**/*.js', 'public/*.html'],
             exclude: ['node_modules/**', 'build/**'],
             enforce: 'post',
             // Obfuscator Rules
-            use: { 
-                loader: WebpackObfuscator.loader, 
+            use: {
+                loader: WebpackObfuscator.loader,
                 options: {
                     rotateStringArray: true
                 }
