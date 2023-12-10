@@ -47,7 +47,7 @@ export default [{
       contentBase: 'build/dev',
       // Options used in setting up server
       host: 'localhost',
-      port: 8008,
+      port: 8001,
     }),
     // Automatic page reload after any changes
     livereload('build/dev')

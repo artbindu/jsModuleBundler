@@ -49,10 +49,10 @@ export default [{
         drop_console: true,
       }
     }),
-    obfuscator({
+    obfuscator({ // JavaScript Obfuscator
       // what files will obfuscate or what not
       include: ['src/**/*.js', 'public/*.html'],
-      exclude: ['node_modules/**'],
+      exclude: ['node_modules/**', 'build/**'],
       // Obfuscator Rules
       compact: false,
       controlFlowFlattening: true,
