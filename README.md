@@ -1,4 +1,4 @@
-# Javascript module bundler
+# Javascript Module Bundler
 1. Webpack Learning: `git checkout webpack`
 2. Rollup Learning: `git checkout rollup`
 3. Browserify Learning: TODO
