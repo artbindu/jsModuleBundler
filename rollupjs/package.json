@@ -24,7 +24,7 @@
   ],
   "author": "Biswasindhu Mandal",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": { 
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
