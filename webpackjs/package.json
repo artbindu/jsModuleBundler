@@ -10,9 +10,20 @@
     "build:prod": "webpack --config webpack.config.prod.js",
     "build:dev": "webpack-dev-server --open --config webpack.config.dev.js"
   },
-  "keywords": [],
-  "author": "Biswasindhu Mandal",
-  "license": "ISC",
+  "keywords": [
+    "webpack",
+    "webpack-cli",
+    "webpack-dev-server",
+    "copy-webpack-plugin",
+    "html-webpack-plugin",
+    "javascript-obfuscator"
+  ],
+  "author": {
+    "name": "Biswasindhu Mandal",
+    "email": "sindhu.online.24x7@gmail.com​",
+    "url": "https://artbindu.github.io/artbindu"
+  },
+  "license": "MIT",
   "dependencies": {
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
