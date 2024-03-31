@@ -17,12 +17,18 @@
   },
   "keywords": [
     "rollup",
+    "rimraf",
     "rollup-plugin-livereload",
     "rollup-plugin-serve",
-    "rollup-plugin-copy"
+    "rollup-plugin-copy",
+    "rollup-obfuscator"
   ],
-  "author": "Biswasindhu Mandal",
-  "license": "ISC",
+  "author": {
+    "name": "Biswasindhu Mandal",
+    "email": "sindhu.online.24x7@gmail.com​",
+    "url": "https://artbindu.github.io/artbindu"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
