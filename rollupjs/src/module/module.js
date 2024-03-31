@@ -1,3 +1,8 @@
+/**    
+ * Copyright 2023-2024 Biswasindhu Mandal
+ * Licensed under MIT (https://github.com/artbindu/jsModuleBundler/blob/main/README.md)
+ */
+
 import './module.css';
 
 function addImage() {
