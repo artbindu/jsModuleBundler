@@ -22,8 +22,12 @@
     "rollup-plugin-serve",
     "rollup-plugin-copy"
   ],
-  "author": "Biswasindhu Mandal",
-  "license": "ISC",
+  "author": {
+    "name": "Biswasindhu Mandal",
+    "email": "sindhu.online.24x7@gmail.com​",
+    "url": "https://artbindu.github.io/artbindu"
+  },
+  "license": "MIT",
   "dependencies": { 
   },
   "devDependencies": {

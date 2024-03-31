@@ -3,7 +3,8 @@
     "files.exclude": {
         "**/node_modules": true,
         "**/.git": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        ".vscode": true
     },
 
     // Controls whether the minimap is shown.
@@ -17,6 +18,6 @@
     // Controls nesting of files in the Explorer.
     "explorer.fileNesting.patterns": {
         "package.json": "*.json",
-        ".gitignore": "LICENSE, *.md"
+        "LICENSE": ".gitignore, *.md"
     }
 }

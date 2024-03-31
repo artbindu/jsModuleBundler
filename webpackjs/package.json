@@ -17,8 +17,12 @@
     "start": "npm run build:prod && npm run build:dev"
   },
   "keywords": [],
-  "author": "Biswasindhu Mandal",
-  "license": "ISC",
+  "author": {
+    "name": "Biswasindhu Mandal",
+    "email": "sindhu.online.24x7@gmail.com​",
+    "url": "https://artbindu.github.io/artbindu"
+  },
+  "license": "MIT",
   "dependencies": {
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
