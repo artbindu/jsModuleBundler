@@ -16,7 +16,14 @@
     "build:dev": "npm run clean:dev && npm run server",
     "start": "npm run build:prod && npm run build:dev"
   },
-  "keywords": [],
+  "keywords": [
+    "webpack",
+    "webpack-cli",
+    "webpack-dev-server",
+    "copy-webpack-plugin",
+    "html-webpack-plugin",
+    "javascript-obfuscator"
+  ],
   "author": {
     "name": "Biswasindhu Mandal",
     "email": "sindhu.online.24x7@gmail.com​",

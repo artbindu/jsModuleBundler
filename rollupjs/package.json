@@ -18,9 +18,11 @@
   },
   "keywords": [
     "rollup",
+    "rimraf",
     "rollup-plugin-livereload",
     "rollup-plugin-serve",
-    "rollup-plugin-copy"
+    "rollup-plugin-copy",
+    "rollup-obfuscator"
   ],
   "author": {
     "name": "Biswasindhu Mandal",
