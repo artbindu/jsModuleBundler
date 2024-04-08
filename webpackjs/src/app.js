@@ -1,6 +1,6 @@
 /**    
  * Copyright 2023-2024 Biswasindhu Mandal
- * Licensed under MIT (https://github.com/artbindu/jsModuleBundler/blob/main/README.md)
+ * Licensed under MIT (https://github.com/artbindu/jsModuleBundler/blob/main/LICENSE)
  */
 
 import { module } from "./module";
